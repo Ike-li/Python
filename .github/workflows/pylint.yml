@@ -21,10 +21,9 @@ jobs:
         pip install pylint
         pip install -r requirements.txt
         pre-commit install
-        pre-commit run --files src/**/*.py
     - name: Run pre-commit
       run: |
-          pre-commit run --all-files
+          pre-commit run --files src/**/*.py
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
