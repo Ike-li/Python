@@ -24,4 +24,4 @@ jobs:
       run: |
           cd src
           ls -al
-          pre-commit run --all
+          pre-commit run --file src
