@@ -1,4 +1,4 @@
-from src.mro import A, B, C, D
+from src.mro import D
 
 
 def test_mro():
